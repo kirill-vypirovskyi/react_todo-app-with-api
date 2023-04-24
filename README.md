@@ -1,44 +1,33 @@
-# React Todo App with API (complete)
+# Todo App with API
 
-It is the third part of the React Todo App with API.
+This is a Todo App project that allows users to add and manage tasks, with all tasks being saved in an API.
 
-Take your code implemented for [Add and Delete](https://github.com/mate-academy/react_todo-app-add-and-delete)
-and implement the ability to toggle and rename todos.
+## Demo
 
-> Here is [the working example](https://mate-academy.github.io/react_todo-app-with-api/)
+You can view a live demo of the Todo App project at the following link: [https://kirill-vypirovskyi.github.io/react_todo-app-with-api/](https://kirill-vypirovskyi.github.io/react_todo-app-with-api/)
 
-## Toggling a todo status
+## Features
 
-Toggle the `completed` status on `TodoStatus` change:
+The Todo App project has the following features:
 
-- covered the todo with a loader overlay while wating for API response;
-- the status should be changed on success;
-- show the `Unable to update a todo` notification in case of API error.
+- Add todo: Users can add new tasks to the Todo list by entering a title and clicking enter button.
+- Delete todo: Users can delete tasks from the Todo list by clicking the "Delete" button next to the task they want to remove.
+- Change status to completed: Users can mark a task as completed by clicking the checkbox before the title.
+- Remove all completed: Users can remove all completed tasks from the Todo list by clicking the "Clear Completed" button.
+- Filtering per status: Users can filter the Todo list by status (all, active, completed) by clicking the respective filter button.
+- Change all to completed and vice versa: Users can mark all tasks as completed by clicking the "Check All" button, or mark all tasks as incomplete by clicking the "Uncheck All" button.
+- Change title: Users can change the title of a task by double-click to the task they want to modify.
 
-Add the ability to toggle the completed status of all the todos with the `toggleAll` checkbox:
+All tasks are saved in an API.
 
-- `toggleAll` button should have `active` class only if all the todos are completed;
-- `toggleAll` click changes its status to the oppsite one, and set it to all the todos;
-- it should work the same as several individual updates of the todos which statuses were actually changed;
-- do send requests for the todos that were not changed;
+## Technologies Used
 
-## Renaming a todo
+The Todo App project was created using the following technologies:
 
-Implement the ability to edit a todo title on double click:
+- React.js
+- JavaScript
+- SASS
 
-- show the edit form instead of the title and remove button;
-- saves changes on the form submit (just press `Enter`);
-- save changes when the field loses focus (`onBlur`);
-- if new title is the same as the old one just cancel editing;
-- cancel editing on `Esс` key `keyup` event;
-- if the new title is empty delete the todo the same way the `x` button does it;
-- if the title was changed show the loader while waiting for the API response;
-- update the todo title on success;
-- show `Unable to update a todo` in case of API error;
-- or the deletion error message if we tried to delete the todo.
+## Credits
 
-## Instructions
-
-- Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline).
-- Use the [React TypeScript cheat sheet](https://mate-academy.github.io/fe-program/js/extra/react-typescript).
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://<your_account>.github.io/react_todo-app-with-api/) and add it to the PR description.
+This Todo App project was created by Kirill Vypirovskyi. The API used in this project is not owned by the creator and was used for educational purposes only.
